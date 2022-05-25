@@ -1,0 +1,442 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+} 
+nav{
+  display: flex;
+  height: 80px;
+  width: 100%;
+  background: #1b1b1b;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 50px 0 100px;
+  flex-wrap: wrap;
+}
+nav .logo{
+  color: #fff;
+  font-size: 35px;
+  font-weight: 600;
+}
+nav ul{
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+}
+nav ul li{
+  margin: 0 15px;
+}
+nav ul li a{
+  color: #f2f2f2;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 500;
+  padding: 8px 15px;
+  border-radius: 5px;
+  letter-spacing: 1px;
+  transition: all 0.3s ease;
+}
+nav ul li a.active,
+nav ul li a:hover{
+  color: #111;
+  background: #fff;
+}
+nav .menu-btn i{
+  color: #fff;
+  font-size: 22px;
+  cursor: pointer;
+  display: none;
+}
+input[type="checkbox"]{
+  display: none;
+}
+@media (max-width: 1000px){
+  nav{
+    padding: 0 40px 0 50px;
+  }
+}
+@media (max-width: 920px) {
+  nav .menu-btn i{
+    display: block;
+  }
+  #click:checked ~ .menu-btn i:before{
+    content: "\f00d";
+  }
+  nav ul{
+    position: fixed;
+    top: 80px;
+    left: -100%;
+    background: #111;
+    height: 100vh;
+    width: 100%;
+    text-align: center;
+    display: block;
+    transition: all 0.3s ease;
+  }
+  #click:checked ~ ul{
+    left: 0;
+  }
+  nav ul li{
+    width: 100%;
+    margin: 40px 0;
+  }
+  nav ul li a{
+    width: 100%;
+    margin-left: -100%;
+    display: block;
+    font-size: 20px;
+    transition: 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  }
+  #click:checked ~ ul li a{
+    margin-left: 0px;
+  }
+  nav ul li a.active,
+  nav ul li a:hover{
+    background: none;
+    color: cyan;
+  }
+}
+
+/* for {players-name}.html */
+.player-content img{
+  width: 300px;
+  height: 300px;
+  background-color: white;
+  border: black;
+  border-radius: 250px;
+  display: flex;
+  margin: auto;
+  padding: 15px;
+}
+
+.player-content h1{
+  font-size: 47px;
+  text-align: center;
+  color: chocolate
+}
+
+.player-content p{
+  overflow: auto;
+  padding: 15px;
+    margin: auto;
+    font-size: 25px;
+}
+
+
+
+footer{
+    margin-top: 25px;
+    background-color: rgb(18, 17, 17);
+    color: white;
+    text-align: center;
+    font-size: 25px; 
+    height : 45px ;
+}
+
+footer a{
+  color: #f2f2f2;
+}
+
+.inner-content h2{
+  margin: auto;
+  text-align: center;
+  font-size: 33px;
+  margin-top: 65px;
+}
+
+.inner-content p{
+    margin-top:20px;
+    text-align: center;
+    color: rgb(93, 185, 146);
+    padding: 0px;
+    font-weight: 800;
+}
+
+.inner-content img{
+    margin: auto;
+    border-radius: unset;
+    width: -webkit-fill-available;
+    padding: 15px;
+    height: auto;
+}
+
+.player-content h2{
+  text-align: center;
+  margin-top: 25px;
+  font-size: 32px;
+  color: rgb(38, 118, 192);
+}
+
+
+h3{
+  margin: auto;
+  text-align: center;
+  font-size: 22px;
+  color: crimson;
+  margin-top: 25px;
+  margin-bottom: 10px;
+}
+
+
+.social img{
+  margin: revert;
+  border-radius: 100px;
+  width: 100px;
+  height: 100px;
+  padding: 12px;
+  margin-left: 12px;
+  display: inline-block;
+  /* float:right; */
+}
+
+.twitter {
+  vertical-align: top;
+  display: flex;
+}
+
+.twitter p{
+  display:inline-block;
+  padding: 0px;
+    margin: auto;
+    color: #551A8B;
+}
+
+.discord p{
+  display:inline-block;
+  padding: 0px;
+    margin: auto;
+    color: #551A8B;
+}
+
+.discord{
+  vertical-align: top;
+  display: flex;
+}
+
+.minecraft p{
+  display:inline-block;
+  padding: 0px;
+    margin: auto;
+    color: #551A8B;
+}
+
+.minecraft{
+  vertical-align: top;
+  display: flex;
+}
+
+.email p{
+  display:inline-block;
+  padding: 0px;
+    margin: auto;
+    color: #551A8B;
+}
+
+.email{
+  vertical-align: top;
+  display: flex;
+}
+
+.social p a{
+  text-decoration: none;
+}
+
+
+/* players.html */
+
+.first-player{
+  display: flex;
+}
+
+.players-container h1{
+  margin: 10px;
+  font-size: 30px;
+  text-align: center;
+  text-decoration: wavy;
+}
+
+
+.first-player img{
+  margin-top: 10px;
+  margin-left: 20px;
+  width: 150px;
+  height: 150px;
+  background-color: white;
+  border: black;
+  border-radius: 100px;
+  display: flex;
+}
+
+.first-player h2{
+  padding: 65px;
+}
+
+.second-player img{
+  margin-top: 10px;
+  margin-right: 20px;
+  width: 150px;
+  height: 150px;
+  background-color: white;
+  border: black;
+  border-radius: 150px;
+  display: flex;
+}
+
+.second-player h2{
+  padding: 65px;
+}
+
+.second-player{
+  display: flex;
+}
+
+.third-player img{
+  margin-top: 10px;
+  margin-left: 20px;
+  width: 150px;
+  height: 150px;
+  background-color: white;
+  border: black;
+  border-radius: 100px;
+  display: flex;
+}
+
+.third-player h2{
+  padding: 65px;
+}
+
+.third-player{
+  display: flex;
+}
+
+.fourth-player img{
+  margin-top: 10px;
+  margin-right: 20px;
+  width: 150px;
+  height: 150px;
+  background-color: white;
+  border: black;
+  border-radius: 150px;
+  display: flex;
+}
+
+.fourth-player h2{
+  padding: 35px;
+}
+
+.fourth-player{
+  display: flex;
+}
+
+/* server-info.html */
+
+.server-content h1{
+  text-align: center;
+    font-size: 28px;
+    color: rgb(20, 59, 199);
+}
+
+.server-content p{
+    background-color: rgb(82, 207, 75);
+    padding:10px;
+    color: rgb(255, 255, 255);
+    font-weight: 300;
+    font-size: 20px;
+    text-align: center;
+}
+
+.server-content img{
+  width: 300px;
+  height: 300px;
+  background-color: white;
+  border: black;
+  display: flex;
+  margin: auto;
+  padding: 15px;
+}
+
+.server-content h3{
+  color: white;
+  background-color: gray;
+  font-weight: 400;
+}
+
+.server-content h2{
+  text-align: center;
+  font-size: 30px;
+  color: red;
+}
+
+.server-content h4{
+  text-align: center;
+  font-size:20px;
+  color:black;
+  padding : 20px;
+}
+
+.download-minecraft p{
+  text-align: center;
+}
+
+.download-minecraft p a{
+  background-color: burlywood;
+  text-decoration: none;
+  font-size: 27px;
+}
+
+/* gallery.html */
+
+.gallery-content img{
+  margin: auto;
+    border-radius: unset;
+    width: -webkit-fill-available;
+    padding: 15px;
+    height: auto;
+}
+
+.gallery-heading{
+  text-align: center;
+    font-size: 30px;
+    color: #e317ca;
+    font-weight: 600;
+}
+
+/* home.html */
+
+.heading-label img{
+  width : 100% ;
+}
+
+.home-container p{
+  text-align: center;
+  padding: 15px;
+  font-size: 20px;
+}
+
+.join-discord{
+  vertical-align: top;
+  display: flex;
+}
+
+.join-discord p{
+  display:inline-block;
+  padding: 0px;
+    margin: auto;
+    font-size: 30px;
+}
+
+.join-discord p a{
+  text-decoration: none;
+}
+
+.join-discord img{
+  margin: revert;
+  border-radius: 100px;
+  width: 100px;
+  height: 100px;
+  padding: 12px;
+  margin-left: 12px;
+  display: inline-block;
+}

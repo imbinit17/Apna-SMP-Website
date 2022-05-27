@@ -330,6 +330,25 @@ h3{
   display: flex;
 }
 
+
+.fifth-player img{
+  margin-top: 10px;
+  margin-left: 20px;
+  width: 150px;
+  height: 150px;
+  background-color: white;
+  border: black;
+  border-radius: 100px;
+  display: flex;
+}
+
+.fifth-player h2{
+  padding: 65px;
+}
+
+.fifth-player{
+  display: flex;
+}
 /* server-info.html */
 
 .server-content h1{

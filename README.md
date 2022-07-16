@@ -3,7 +3,7 @@
 Official Website of our Minecraft Server
 of our friends 
 
-Website URL : imbinit17.github.io/Apna-SMP-Website/
+Website URL : https://imbinit17.github.io/Apna-SMP-Website/
 
 This website contains the server info along 
 with the players in it and the image gallery
